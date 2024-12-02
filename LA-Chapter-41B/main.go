@@ -27,6 +27,8 @@ func main() {
 	// Menampilkan pesan sukses koneksi
 	fmt.Println("success connected to Redis")
 
+	StructureDataString(ctx, rdb)
+
 }
 
 func StructureDataString(ctx context.Context, rdb *redis.Client) {
